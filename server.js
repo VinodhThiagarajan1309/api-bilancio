@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 var port     = process.env.PORT || 8080; // set our port
 
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/bilanciodb'); // connect to our database
+mongoose.connect('mongodb://bilancio:bilancio@ds157499.mlab.com:57499/bilanciodb'); // connect to our database
 var Bill     = require('./app/models/bill');
 
 // ROUTES FOR OUR API
